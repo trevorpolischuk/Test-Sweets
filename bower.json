@@ -1,0 +1,27 @@
+{
+  "name": "test-suite-boilerplate",
+  "version": "0.0.1",
+  "homepage": "https://github.com/trevorpolischuk/Test-Suite-Boilerplate",
+  "authors": [
+    "Trevor Polischuk <trevorpolischuk@gmail.com>"
+  ],
+  "description": "A boilerplate for setting up a test suite using qUnit",
+  "keywords": [
+    "Test",
+    "Suite",
+    "qUnit",
+    "Test",
+    "Boilerplate"
+  ],
+  "license": "GPL",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "app/bower_components"
+  ],
+  "dependencies": {
+    "qunit": "~1.14.0",
+    "blanket": "~1.1.5"
+  }
+}
