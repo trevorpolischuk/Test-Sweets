@@ -8,3 +8,4 @@ Features
 - Code coverage testing via Blanket.JS
 - Pre-built test runner
 - Easy integration with Grunt and PhantomJS for running tests from the command line
+- Dependency Management with Bower
