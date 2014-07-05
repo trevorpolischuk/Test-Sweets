@@ -1,4 +1,4 @@
-Test-Suite-Boilerplate
+Test Sweets
 ======================
 A boilerplate for implementing a front-end test suite using qUnit.
 
