@@ -1,19 +1,19 @@
 /* Example Tests */
 
-test( "Boilerplate test for variable initialization", 1, function() {
-    moduleName.init();
-    var checkExists = false;
-    var initObjectsForTest = [
-        sidebarModule.vars.parentLinks
-    ];
+// test( "Boilerplate test for variable initialization", 1, function() {
+//    //moduleName.init();
+//     var checkExists = false;
+//     var initObjectsForTest = [
+//       //moduleName.vars.variableName
+//     ];
 
-    _.each(initObjectsForTest, initIteration);
+//     _.each(initObjectsForTest, initIteration);
 
-    function initIteration(initVariable) {
-        checkExists = !(initVariable.length === 0);
-        ok(checkExists, initVariable.selector + ' in the ==Module Name== failed to initialize');
-    }
-});
+//     function initIteration(initVariable) {
+//         checkExists = !(initVariable.length === 0);
+//         ok(checkExists, initVariable.selector + ' in the ==Module Name== failed to initialize');
+//     }
+// });
 
 test( "List of Qunit Assertions", 9, function() {
 
