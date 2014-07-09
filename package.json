@@ -1,0 +1,30 @@
+{
+  "name": "test-sweets",
+  "version": "0.0.1",
+  "description": "A test suite boilerplate for front-end javascript, using qUnit",
+  "main": "Gruntfile.js",
+  "directories": {
+    "test": "tests"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://trevorpolischuk%40gmail.com@github.com/trevorpolischuk/Test-Sweets.git"
+  },
+  "keywords": [
+    "Test",
+    "Suite",
+    "Front-end",
+    "Testing",
+    "Automated",
+    "Unit",
+    "Testing"
+  ],
+  "author": "Trevor Polischuk",
+  "license": "GPL2",
+  "bugs": {
+    "url": "https://github.com/trevorpolischuk/Test-Sweets/issues"
+  }
+}
