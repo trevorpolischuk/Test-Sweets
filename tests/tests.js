@@ -46,7 +46,7 @@ test( "List of Qunit Assertions", 9, function() {
     FooPE.prototype.doB = function () {};
     FooPE.prototype.bar = 'prototype';
 
-    var fooPE = new Foo( 1, "2", [] );
+    var fooPE = new FooPE( 1, "2", [] );
     var barPE = {
         x : 1,
         y : "2",
