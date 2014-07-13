@@ -11,8 +11,8 @@ module.exports = function(grunt) {
             scripts: {
                 files: [
                     {
-                        src: "tests/src/*.js",
-                        dest: "tests/tests.js",
+                        src: "tests/tests/src/*.js",
+                        dest: "tests/tests/tests.js",
                         nonull: true
                     }
                 ]
