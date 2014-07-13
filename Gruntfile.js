@@ -20,13 +20,17 @@ module.exports = function(grunt) {
         },
         qunit: {
             all: ['runners/main.html']
+        },
+        jshint: {
+            all: ['Gruntfile.js', 'tests/tests/src/*', 'tests/tests/tests.js']
         }
     });
 
     grunt.loadNpmTasks('grunt-contrib-concat');
     grunt.loadNpmTasks('grunt-contrib-qunit');
+    grunt.loadNpmTasks('grunt-contrib-jshint');
 
     // Default task(s).
-    grunt.registerTask('default', ['qunit']);
+    grunt.registerTask('default', ['qunit', 'jshint']);
 
 };
