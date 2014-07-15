@@ -23,14 +23,24 @@ module.exports = function(grunt) {
         },
         jshint: {
             all: ['Gruntfile.js', 'tests/tests/src/*', 'tests/tests/tests.js']
+        },
+        watch: {
+            scripts: {
+                files: ['tests/tests/src/*.js'],
+                tasks: ['concat', 'qunit', 'jshint'],
+                options: {
+                    spawn: false
+                }
+            }
         }
     });
 
     grunt.loadNpmTasks('grunt-contrib-concat');
     grunt.loadNpmTasks('grunt-contrib-qunit');
     grunt.loadNpmTasks('grunt-contrib-jshint');
+    grunt.loadNpmTasks('grunt-contrib-watch');
 
     // Default task(s).
-    grunt.registerTask('default', ['qunit', 'jshint']);
+    grunt.registerTask('default', ['concat', 'jshint', 'qunit', 'watch']);
 
 };
