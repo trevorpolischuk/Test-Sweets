@@ -19,7 +19,7 @@ module.exports = function(grunt) {
             }
         },
         qunit: {
-            all: ['runners/main.html']
+            all: ['tests/runners/main.html']
         },
         jshint: {
             all: ['Gruntfile.js', 'tests/tests/src/*', 'tests/tests/tests.js']
