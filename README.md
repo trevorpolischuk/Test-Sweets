@@ -11,11 +11,15 @@ It lives neatly in its own polite folder, sitting carefully as not to disturb th
 - Constant immediate feedback on the state of your application
 - An early warning system that catches the worst kind of bugs: silent failures
 - A greater sense of confidence when making changes to your codebase
-- A goal in life. Powered by Blanket.js, you will know how exactly how much of your application is being tested.
+- A goal in life.
 
-#### Here is a more elaborate list of technical features.
+#### Additional technical features.
 
 - List of sample assertions available in the qUnit test framework
 - A sample test runner for rapid cross browser testing
 - Configurations for integrating Grunt
 - Testing at the command line using PhantomJS
+
+TODO: Test Philosophy
+      Setting up Test Sweets
+      Example Project
