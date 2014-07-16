@@ -1,11 +1,21 @@
 Test Sweets
 ======================
-A boilerplate for implementing a front-end test suite using qUnit.
+A boilerplate test suite for automated Javascript tests.
 
-Features
-----
-- List of assertions with examples
-- Code coverage testing via Blanket.JS
-- Pre-built test runner
-- Easy integration with Grunt and PhantomJS for running tests from the command line
-- Dependency Management with Bower
+Test Sweets is designed to be a portable, flexible, and easy to understand approach to: automating javascript tests in the browser.
+
+It lives neatly in its own polite folder, sitting carefully as not to disturb the rest of your app, but unlocks a powerful timesaver and fascinating programming challenge.
+
+Should you read on, and use Test Sweets in your web application, you will receive the following benefits:
+
+- Constant immediate feedback on the state of your application
+- An early warning system that catches the worst kind of bugs: silent failures
+- A greater sense of confidence when making changes to your codebase
+- A goal in life. Powered by Blanket.js, you will know how exactly how much of your application is being tested.
+
+Here is a more elaborate list of technical features.
+
+- List of sample assertions available in the qUnit test framework
+- A sample test runner for rapid cross browser testing
+- Configurations for integrating Grunt
+- Testing at the command line using PhantomJS
