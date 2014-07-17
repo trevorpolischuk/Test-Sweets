@@ -20,6 +20,23 @@ It lives neatly in its own polite folder, sitting carefully as not to disturb th
 - Configurations for integrating Grunt
 - Testing at the command line using PhantomJS
 
+### Testing Philosophy
+
+Testing front-end code in web applications is not as straight forward as one would assume. It is very possible to write poor, brittle tests, that cost more time to maintain than any advantages gained from automated testing.
+
+Just like how writing clean and effective code adheres to concepts like "Seperation of Concerns" and "Dont Repeat Yourself", your testing philosophy will determine the quality of your test suite.
+
+#### Testing Principles
+
+ - Every test must be atomic.
+
+ - A test should be fast. 
+
+ - Write once, run forever
+
+
+
 TODO: Test Philosophy
+      Pitfalls that make testing Javascript very difficult
       Setting up Test Sweets
       Example Project
