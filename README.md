@@ -34,7 +34,7 @@ Just like how writing clean and effective code adheres to concepts like "Seperat
 
  - Write once, run forever
 
-Every test you write should be able to run individually and in any order. A test should not rudely affect any other test. HTML required for the test should be appended to the <div id="qunit-fixture"></div>, which will be magically wiped clean after every test.
+Every test you write should be able to run individually and in any order. A test should not rudely affect any other test. HTML required for the test should be appended to the `<div id="qunit-fixture"></div>`, which will be magically wiped clean after every test.
 
 Tests should be fast as F. Long winded tests that take several seconds (or worse, minutes) to complete will deter your fellow developers from running the tests on every compile.
 
