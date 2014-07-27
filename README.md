@@ -2,7 +2,7 @@ Test Sweets
 ======================
 ### A boilerplate test suite for automated Javascript tests.
 
-Test Sweets is designed to be a portable, flexible, and easy to understand approach to automating javascript tests in the browser and in the command line.
+Test Sweets is designed to be a portable, flexible, and easy to understand approach to automating javascript tests in the browser and at the command line.
 
 It lives neatly in its own polite folder, sitting carefully as not to disturb the rest of your app, but unlocks a powerful timesaver and fascinating programming challenge.
 
