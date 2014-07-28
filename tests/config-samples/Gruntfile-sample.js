@@ -22,7 +22,7 @@ module.exports = function(grunt) {
             all: ['tests/runners/main.html']
         },
         jshint: {
-            all: ['Gruntfile.js', 'tests/tests/src/*', 'tests/tests/tests.js']
+            all: ['tests/tests/src/*', 'tests/tests/tests.js']
         }
     });
 
