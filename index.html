@@ -18,7 +18,7 @@
         <header class="inner">
           <a id="forkme_banner" href="https://github.com/trevorpolischuk/Test-Sweets">View on GitHub</a>
 
-          <h1 id="project_title">Test-sweets</h1>
+          <h1 id="project_title">Test Sweets</h1>
           <h2 id="project_tagline"></h2>
 
             <section id="downloads">
@@ -31,44 +31,59 @@
     <!-- MAIN CONTENT -->
     <div id="main_content_wrap" class="outer">
       <section id="main_content" class="inner">
-        <h3>
-<a name="welcome-to-github-pages" class="anchor" href="#welcome-to-github-pages"><span class="octicon octicon-link"></span></a>Welcome to GitHub Pages.</h3>
 
-<p>This automatic page generator is the easiest way to create beautiful pages for all of your projects. Author your page content here using GitHub Flavored Markdown, select a template crafted by a designer, and publish. After your page is generated, you can check out the new branch:</p>
+<h3>A boilerplate test suite for automated Javascript tests.</h3>
 
-<pre><code>$ cd your_repo_root/repo_name
-$ git fetch origin
-$ git checkout gh-pages
-</code></pre>
+<p>Test Sweets is designed to be a portable, flexible, and easy to understand approach to automating javascript tests in the browser and at the command line.</p>
 
-<p>If you're using the GitHub for Mac, simply sync your repository and you'll see the new branch.</p>
+<p>It lives neatly in its own polite folder, sitting carefully as not to disturb the rest of your app, but unlocks a powerful timesaver and fascinating programming challenge.</p>
 
-<h3>
-<a name="designer-templates" class="anchor" href="#designer-templates"><span class="octicon octicon-link"></span></a>Designer Templates</h3>
+<h3>Should you read on, and use Test Sweets in your web application, you will receive the following benefits:</h3>
 
-<p>We've crafted some handsome templates for you to use. Go ahead and continue to layouts to browse through them. You can easily go back to edit your page before publishing. After publishing your page, you can revisit the page generator and switch to another theme. Your Page content will be preserved if it remained markdown format.</p>
+<ul>
+<li>Constant immediate feedback on the state of your application</li>
+<li>An early warning system that catches the worst kind of bugs: silent failures</li>
+<li>A greater sense of confidence when making changes to your codebase</li>
+<li>A goal in life.</li>
+</ul>
 
-<h3>
-<a name="rather-drive-stick" class="anchor" href="#rather-drive-stick"><span class="octicon octicon-link"></span></a>Rather Drive Stick?</h3>
+<h4> Additional technical features:</h4>
 
-<p>If you prefer to not use the automatic generator, push a branch named <code>gh-pages</code> to your repository to create a page manually. In addition to supporting regular HTML content, GitHub Pages support Jekyll, a simple, blog aware static site generator written by our own Tom Preston-Werner. Jekyll makes it easy to create site-wide headers and footers without having to copy them across every page. It also offers intelligent blog support and other advanced templating features.</p>
+<ul>
+<li>List of sample assertions available in the qUnit test framework</li>
+<li>A sample test runner for rapid cross browser testing</li>
+<li>Configurations for integrating Grunt</li>
+<li>Testing at the command line using PhantomJS</li>
+</ul>
 
-<h3>
-<a name="authors-and-contributors" class="anchor" href="#authors-and-contributors"><span class="octicon octicon-link"></span></a>Authors and Contributors</h3>
+<h3>Philosophy</h3>
 
-<p>You can <a href="https://github.com/blog/821" class="user-mention">@mention</a> a GitHub username to generate a link to their profile. The resulting <code>&lt;a&gt;</code> element will link to the contributor's GitHub Profile. For example: In 2007, Chris Wanstrath (<a href="https://github.com/defunkt" class="user-mention">@defunkt</a>), PJ Hyett (<a href="https://github.com/pjhyett" class="user-mention">@pjhyett</a>), and Tom Preston-Werner (<a href="https://github.com/mojombo" class="user-mention">@mojombo</a>) founded GitHub.</p>
+<p>Testing front-end code in web applications is not as straight forward as one would assume. It is very possible to write poor, brittle tests, that cost more time to maintain than any advantages gained from automated testing.</p>
 
-<h3>
-<a name="support-or-contact" class="anchor" href="#support-or-contact"><span class="octicon octicon-link"></span></a>Support or Contact</h3>
+<p>Just like how writing clean and effective code adheres to concepts like "Separation of Concerns" and "Don't Repeat Yourself", your testing philosophy will determine the quality of your test suite.</p>
 
-<p>Having trouble with Pages? Check out the documentation at <a href="http://help.github.com/pages">http://help.github.com/pages</a> or contact <a href="mailto:support@github.com">support@github.com</a> and we’ll help you sort it out.</p>
+<h3>Testing Principles</h3>
+
+<h5>Every test must be atomic.</h5>
+
+ <p>Every test you write should be able to run individually and in any order. A test should not rudely affect any other test.
+ One way to achieve this is to append any markup required for the test to the `<div id="qunit-fixture"></div>`, which will be magically wiped clean after every test, while waiting dutifully for the next test to run.</p>
+
+ <h5>A test should be fast.</h5>
+
+ <p>Think milliseconds fast. Long winded tests that take several seconds (or worse, minutes) to complete will deter your fellow developers from running the tests on every compile. Speed can be achieved through mocking connections to remote servers, and overriding animation timers to 0 seconds.</p>
+
+<h5>Write once, run forever</h5>
+
+<p>Tests should be robust and run obediently until they have something useful to report. They should not be tightly coupled, brittle pieces of code that require constant attention.</p>
+
       </section>
     </div>
 
     <!-- FOOTER  -->
     <div id="footer_wrap" class="outer">
       <footer class="inner">
-        <p class="copyright">Test-sweets maintained by <a href="https://github.com/trevorpolischuk">trevorpolischuk</a></p>
+        <p class="copyright">Test-sweets maintained by <a href="http://www.trevorpolischuk.com">trevorpolischuk</a></p>
         <p>Published with <a href="http://pages.github.com">GitHub Pages</a></p>
       </footer>
     </div>
