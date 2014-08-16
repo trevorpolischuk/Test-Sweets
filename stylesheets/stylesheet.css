@@ -309,11 +309,14 @@ Full-Width Styles
 }
 
 #project_tagline {
-  color: #fff;
-  font-size: 24px;
+  color: #000;
+  font-size: 15px;
   font-weight: 300;
   background: none;
-  text-shadow: #111 0px 0px 10px;
+  margin:0;
+  padding:0;
+  font-style:italic;
+/*  text-shadow: #111 0px 0px 10px;*/
 }
 
 #downloads {
@@ -356,7 +359,10 @@ Full-Width Styles
 }
 
 #main_content_wrap {
-  background: #f2f2f2;
+/*  background: #f2f2f2;
+*/  
+  background:url('../images/tiny_grid.png');
+  background-repeat:repeat;
   border-top: 1px solid rgba(177, 246, 203, 1.0);
   border-bottom: 1px solid rgba(177, 246, 203, 1.0);
 }
