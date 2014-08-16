@@ -6,6 +6,8 @@ Test Sweets is designed to be a portable, flexible, and easy to understand appro
 
 It lives neatly in its own polite folder, sitting carefully as not to disturb the rest of your app, but unlocks a powerful timesaver and fascinating programming challenge.
 
+[Read the Docs](http://trevorpolischuk.github.io/Test-Sweets/)
+
 #### Should you read on, and use Test Sweets in your web application, you will receive the following benefits:
 
 - Constant immediate feedback on the state of your application
