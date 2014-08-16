@@ -6,9 +6,11 @@ Test Sweets is designed to be a portable, flexible, and easy to understand appro
 
 It lives neatly in its own polite folder, sitting carefully as not to disturb the rest of your app, but unlocks a powerful timesaver and fascinating programming challenge.
 
-[Read the Docs](http://trevorpolischuk.github.io/Test-Sweets/)
+###Quick Start
 
-#### Should you read on, and use Test Sweets in your web application, you will receive the following benefits:
+[Read the Docs](http://trevorpolischuk.github.io/Test-Sweets/) to get started using Test Sweets in your application.
+
+#### Benefits of Test Sweets (and automated testing in general)
 
 - Constant immediate feedback on the state of your application
 - An early warning system that catches the worst kind of bugs: silent failures
