@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <meta name="description" content="Test-sweets : ">
+
+    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
+
+
+    <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/highlight.js/8.1/styles/default.min.css">
+
+
+    <title>Test Sweets</title>
+</head>
+
+<body>
+
+<!-- HEADER -->
+<div id="header_wrap" class="outer">
+    <header class="inner">
+        <a id="forkme_banner" href="https://github.com/trevorpolischuk/Test-Sweets">View on GitHub</a>
+
+        <h1 id="project_title"><a href="index.html">Test Sweets</a></h1>
+        <h2 id="project_tagline">Powered by qUnit</h2>
+
+        <section id="downloads">
+            <a class="zip_download_link" href="https://github.com/trevorpolischuk/Test-Sweets/zipball/master">Download this project as a .zip file</a>
+            <a class="tar_download_link" href="https://github.com/trevorpolischuk/Test-Sweets/tarball/master">Download this project as a tar.gz file</a>
+        </section>
+    </header>
+</div>
+
+<!-- MAIN CONTENT -->
+<div id="main_content_wrap" class="outer">
+    <section id="main_content" class="inner">
+        <h3>Automated Testing: An Overview</h3>
+
+        <p>Testing front-end code in web applications is not as straight forward as one would assume. It is very possible to write poor, brittle tests, that cost more time to maintain than any advantages gained from automated testing.</p>
+
+        <p>Just like how writing clean and effective code adheres to concepts like "Separation of Concerns" and "Don't Repeat Yourself", your testing philosophy will determine the quality of your test suite.</p>
+
+        <h3>Testing Principles</h3>
+
+        <h5>Every test must be atomic.</h5>
+
+        <p>Every test you write should be able to run individually and in any order. A test should not rudely affect any other test.
+            One way to achieve this is to append any markup required for the test to the fixture element provided in the test runner <em>tests/runnrers/main.html</em></p>
+        <pre><code class="html">&lt;div id="qunit-fixture"&gt;&lt;/div&gt;</code></pre><p> which will be magically wiped clean after every test, while waiting dutifully for the next test to run.</p>
+
+        <h5>A test should be fast.</h5>
+
+        <p>Think milliseconds fast. Long winded tests that take several seconds (or worse, minutes) to complete will deter your fellow developers from running the tests on every compile. Speed can be achieved through mocking connections to remote servers, and overriding animation timers to 0 seconds.</p>
+
+        <h5>Write once, run forever</h5>
+
+        <p>Tests should be robust and run obediently until they have something useful to report. They should not be tightly coupled, brittle pieces of code that require constant attention.</p>
+
+    </section>
+</div>
+
+<!-- FOOTER  -->
+<div id="footer_wrap" class="outer">
+    <footer class="inner">
+        <p class="copyright">Test-sweets maintained by <a href="http://www.trevorpolischuk.com">trevorpolischuk</a></p>
+        <p>Published with <a href="http://pages.github.com">GitHub Pages</a></p>
+    </footer>
+</div>
+
+<script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-53887236-1', 'auto');
+    ga('send', 'pageview');
+
+</script>
+
+<script src="http://cdnjs.cloudflare.com/ajax/libs/highlight.js/8.1/highlight.min.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
+
+</body>
+</html>

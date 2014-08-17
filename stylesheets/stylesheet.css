@@ -104,7 +104,7 @@ footer p {
 
 a {
   text-decoration: none;
-  color: #007edf;
+  color: #357F51;
   text-shadow: none;
 
   transition: color 0.5s ease;
@@ -267,6 +267,34 @@ form {
     margin-top:0;
 }
 
+.cta-button {
+    background-color:#357f51;
+    height:22px;
+    width:250px;
+    display:block;
+    margin:0 auto;
+    color:white;
+    padding:20px;
+    margin-bottom:35px;
+}
+
+.cta-title {
+    margin-top:35px;
+    text-align:center;
+    width:100%;
+}
+
+.next-button {
+    height:22px;
+    width: 150px;
+    background-color:#357f51;
+    display:block;
+    padding:20px;
+    color:white;
+    width:200px;
+    float:right;
+    margin-bottom:40px;
+}
 /*******************************************************************************
 Full-Width Styles
 *******************************************************************************/
@@ -318,6 +346,11 @@ Full-Width Styles
   font-size: 42px;
   font-weight: 700;
   /*text-shadow: #111 0px 0px 10px;*/
+}
+
+#project_title a, #project_title a:hover {
+    color:#357F51;
+    text-decoration: none;
 }
 
 #project_tagline {
