@@ -8,6 +8,10 @@
 
     <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
 
+
+    <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/highlight.js/8.1/styles/default.min.css">
+
+
     <title>Test Sweets</title>
 </head>
 
@@ -33,35 +37,34 @@
     <section id="main_content" class="inner">
 
         <h4>What is Test Sweets?</h4>
-        <p>Test sweets is a tool I created for myself to quickly setup a test suite to test Front-end Javascript.
-            It takes the thinking out of the boilerplate code and can drop into an existing project to build an automated test suite.
-            It is also the result of lots of my own research and failures, and I hope if you decide to use it will save you time, frustration, and hopefully make you a better programmer.
+        <p>Test sweets is a tool I created for myself to quickly setup automated tests for Front-end Javascript.
+            It is a solid foundation of tools and plumbing that can drop into an existing project or developed alongside a new one.
+            It is also the result of lots of my own research that has helped me understand the core language and made me a better programmer.
         </p>
 
-        <h5>Benefits:</h5>
+        <h4>What Test Sweets is not.</h4>
+        <p>Test sweets is not a testing framework. It uses a test framework called qUnit, made by the team that makes jQuery.</p>
+        <p>There are other testing frameworks available like Mocha, Jasmine, or Buster. Test Sweets is compatible with those frameworks, but not out of the box.</p>
+
+        <h4>Why use Test Sweets?</h4>
         <ul>
+            <li>Automation of a very boring and tedious task</li>
             <li>Constant immediate feedback on the state of your application</li>
             <li>An early warning system that catches the worst kind of bugs: silent failures</li>
             <li>A greater sense of confidence when making changes to your codebase</li>
             <li>A goal in life.</li>
         </ul>
 
-        <p>Interestingly, learning about and implementing unit tests greatly improved my knowledge and confidence with Javascript. It inspires a new way of thinking about Javascript, and requires a strong understanding of the underlying application.</p>
-
-        <h4>What Test Sweets is not</h4>
-        <p>Test sweets is not a testing framework. It uses a test framework called qUnit, made by the team that makes jQuery.</p>
-        <p>There are other testing frameworks available like Mocha, Jasmine, or Buster. Test Sweets is compatible with those frameworks, but not out of the box.</p>
-
-        <h4>Features:</h4>
+        <h4>Handy Features:</h4>
 
         <ul>
             <li>List of sample assertions available in the qUnit test framework</li>
-            <li>A sample test runner for rapid cross browser testing</li>
-            <li>Configurations for integrating Grunt</li>
+            <li>A sample test runner for rapid cross browser testing, even in virtual machines and mobile SDKs</li>
+            <li>Sample Configurations for integrating Grunt</li>
             <li>Testing at the command line using PhantomJS</li>
         </ul>
 
-        <p>This guide will help you setup Test Sweets in your project and cover larger topics about Unit testing. </p>
+        <p>This guide will help you setup Test Sweets in your project and cover larger topics about Unit testing.</p>
 
         <h4>Test Sweets Dependencies</h4>
         <ul>
@@ -69,7 +72,7 @@
             <li><a href="">NPM</a></li>
         </ul>
 
-        <h3>Philosophy</h3>
+        <h3>Automated Testing: An Overview</h3>
 
         <p>Testing front-end code in web applications is not as straight forward as one would assume. It is very possible to write poor, brittle tests, that cost more time to maintain than any advantages gained from automated testing.</p>
 
@@ -81,7 +84,7 @@
 
         <p>Every test you write should be able to run individually and in any order. A test should not rudely affect any other test.
         One way to achieve this is to append any markup required for the test to the fixture element provided in the test runner <em>tests/runnrers/main.html</em></p>
-        <pre><code>&lt;div id="qunit-fixture"&gt;&lt;/div&gt;</code></pre><p> which will be magically wiped clean after every test, while waiting dutifully for the next test to run.</p>
+        <pre><code class="html">&lt;div id="qunit-fixture"&gt;&lt;/div&gt;</code></pre><p> which will be magically wiped clean after every test, while waiting dutifully for the next test to run.</p>
 
         <h5>A test should be fast.</h5>
 
@@ -112,6 +115,9 @@
     ga('send', 'pageview');
 
 </script>
+
+<script src="http://cdnjs.cloudflare.com/ajax/libs/highlight.js/8.1/highlight.min.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
 
 </body>
 </html>
