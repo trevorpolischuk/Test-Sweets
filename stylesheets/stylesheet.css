@@ -255,6 +255,19 @@ form {
   padding: 20px;
 }
 
+.screenshots {
+    float:left;
+    display:inline;
+    width:100%;
+    margin-bottom:5px;
+}
+
+.caption {
+    font-style:italic;
+    font-size:14px;
+    margin-top:0;
+}
+
 /*******************************************************************************
 Full-Width Styles
 *******************************************************************************/
@@ -265,7 +278,7 @@ Full-Width Styles
 
 .inner {
   position: relative;
-  max-width: 640px;
+  max-width: 720px;
   padding: 20px 10px;
   margin: 0 auto;
 }
