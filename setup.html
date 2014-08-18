@@ -35,6 +35,76 @@
 <!-- MAIN CONTENT -->
 <div id="main_content_wrap" class="outer">
     <section id="main_content" class="inner">
+        <h3>Download Test Sweets</h3>
+        <p>Download Test Sweets by clicking one of the two download folders at the top of this page.</p>
+        <p>Alternatively you can go directly to the Github Repository by clicking on the link in the header.</p>
+        <h3>Unzip and locate the /tests/ folder</h3>
+        <p>Copy the /tests/ folder from the unzipped folder into the root folder of your project.</p>
+        <p>Get up and take a break. Walk around, pet your cat. Nice work.</p>
+
+        <h3>Some 'splainin</h3>
+        <p>Take a peek inside of the tests folder now and you should see these contents</p>
+        <pre><code>/tests/
+    /config-samples/
+    /frameworks/
+    /runners/
+    /tests/</code></pre>
+
+        <p><strong>/config-samples/</strong> contains some sample configurations that make hooking up Test Sweets into Grunt much easier.</p>
+
+        <p>There are sample configurations for setting up the grunt qUnit task as well as suggestions for setting up your tests to be concatenated, just like your application code. I'll show you more specifics when we setup the command line tools.</p>
+
+        <p><strong>/frameworks/</strong> contains the libraries that power Test Sweets. Inside you will find qUnit and BlanketJS, which is used to show you how much of your application is under test.</p>
+
+        <p><strong>/runners/</strong> contains a test runner. A test runner is an .html file that loads your applications files and any tests you would like to run.</p>
+
+        <p>Finally, <strong>/tests/</strong> contains the tests you will be write for your application.</p>
+
+        <h3>Runners</h3>
+        <p>Let's crack open the <strong>/runners/</strong> folder and open main.html in your favorite text editor.</p>
+
+        <pre><code>
+    &lt;!DOCTYPE html&gt;
+    &lt;head&gt;
+    &lt;meta charset="utf-8"&gt;
+    &lt;meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"&gt;
+    &lt;title&gt;Test Sweets&lt;/title&gt;
+    &lt;meta name="description" content=""&gt;
+    &lt;meta name="viewport" content="width=device-width"&gt;
+
+    &lt;!-- LINK TO YOUR APPLICATION CSS --&gt;
+    &lt;link rel="stylesheet" href="../frameworks/qunit/qunit/qunit.css"&gt;
+    &lt;link rel="stylesheet" href="../../path/to/your/css.css"&gt;
+
+
+    &lt;/head&gt;
+    &lt;body&gt;
+
+    &lt;div id="qunit"&gt;&lt;/div&gt;
+    &lt;div id="qunit-fixture"&gt;&lt;/div&gt;
+
+    &lt;!-- Qunit JS Testing Framework, if desired include alternative testing frameworks here --&gt;
+    &lt;script src="../frameworks/../frameworks/qunit/qunit/qunit.js"&gt;&lt;/script&gt;
+
+    &lt;!-- Code Coverage library, for testing how much of your applications is under test --&gt;
+    &lt;script src="../frameworks/blanket/dist/qunit/blanket.js"&gt;&lt;/script&gt;
+
+    &lt;!-- Your application's Javascript --&gt;
+    &lt;script src="../../path/to/your/app.js" data-cover&gt;&lt;/script&gt;
+
+    &lt;!-- Disabling Auto Start for qUnit can help setting up requirements for asynchronous testing --&gt;
+    &lt;!--&lt;script&gt;QUnit.config.autostart = false;&lt;/script&gt;--&gt;
+
+    &lt;script src="../tests/tests.js"&gt;&lt;/script&gt;
+
+    &lt;/body&gt;
+    &lt;/html&gt;</code>
+        </pre>
+        <p>Hook up your Javascript into the test runner</p>
+        <p>Setting up GruntJS</p>
+        <p>Modifying your Gruntfile.js and package.json using the sample configurations</p>
+        <p>Install Test Sweet Dependencies using NPM</p>
+
 
     </section>
 </div>

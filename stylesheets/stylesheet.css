@@ -291,9 +291,10 @@ form {
     display:block;
     padding:20px;
     color:white;
-    width:200px;
+    width:220px;
     float:right;
     margin-bottom:40px;
+    font-size:18px;
 }
 /*******************************************************************************
 Full-Width Styles
