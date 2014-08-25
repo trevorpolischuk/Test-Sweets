@@ -52,16 +52,14 @@
 
         <p><strong>/config-samples/</strong> contains some sample configurations that make hooking up Test Sweets into Grunt much easier.</p>
 
-        <p>There are sample configurations for setting up the grunt qUnit task as well as suggestions for setting up your tests to be concatenated, just like your application code. I'll show you more specifics when we setup the command line tools.</p>
-
         <p><strong>/frameworks/</strong> contains the libraries that power Test Sweets. Inside you will find qUnit and BlanketJS, which is used to show you how much of your application is under test.</p>
 
-        <p><strong>/runners/</strong> contains a test runner. A test runner is an .html file that loads your applications files and any tests you would like to run.</p>
+        <p><strong>/runners/</strong> contains a test runner. A test runner is a .html file that loads your applications files and any tests you would like to run.</p>
 
         <p>Finally, <strong>/tests/</strong> contains the tests you will be write for your application.</p>
 
         <h3>Runners</h3>
-        <p>Let's crack open the <strong>/runners/</strong> folder and open main.html in your favorite text editor.</p>
+        <p>Let's crack open the <strong>/runners/</strong> folder and open main.html in your favorite text editor. You should see something close to the following:</p>
 
         <pre><code>
     &lt;!DOCTYPE html&gt;
@@ -72,15 +70,17 @@
     &lt;meta name="description" content=""&gt;
     &lt;meta name="viewport" content="width=device-width"&gt;
 
-    &lt;!-- LINK TO YOUR APPLICATION CSS --&gt;
+    &lt;!-- INCLUDE YOUR APPLICATION'S CSS --&gt;
     &lt;link rel="stylesheet" href="../frameworks/qunit/qunit/qunit.css"&gt;
     &lt;link rel="stylesheet" href="../../path/to/your/css.css"&gt;
-
-
     &lt;/head&gt;
+
     &lt;body&gt;
 
+    &lt;!-- The id=qunit div is used by qUnit to display the results of your test--&gt;
     &lt;div id="qunit"&gt;&lt;/div&gt;
+
+    &lt;!-- The id=qunit-fixture div should be used to populate any DOM elements you need for your test, and is then magically whisked away between tests--&gt;
     &lt;div id="qunit-fixture"&gt;&lt;/div&gt;
 
     &lt;!-- Qunit JS Testing Framework, if desired include alternative testing frameworks here --&gt;
@@ -89,7 +89,7 @@
     &lt;!-- Code Coverage library, for testing how much of your applications is under test --&gt;
     &lt;script src="../frameworks/blanket/dist/qunit/blanket.js"&gt;&lt;/script&gt;
 
-    &lt;!-- Your application's Javascript --&gt;
+    &lt;!-- INCLUDE YOUR APPLICATIONS'S JAVASCRIPT --&gt;
     &lt;script src="../../path/to/your/app.js" data-cover&gt;&lt;/script&gt;
 
     &lt;!-- Disabling Auto Start for qUnit can help setting up requirements for asynchronous testing --&gt;
@@ -100,6 +100,8 @@
     &lt;/body&gt;
     &lt;/html&gt;</code>
         </pre>
+
+        Let's step through the runner and give you an explanation bettwen
         <p>Hook up your Javascript into the test runner</p>
         <p>Setting up GruntJS</p>
         <p>Modifying your Gruntfile.js and package.json using the sample configurations</p>
