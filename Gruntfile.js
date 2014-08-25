@@ -9,6 +9,13 @@ module.exports = function(grunt) {
             files: {
                 src: ['source/javascripts/*.js'],
                 dest: 'minified/app.min.js'
+            },
+            libs: {
+                src:[
+                    'source/lib/jquery/dist/jquery.js',
+                    'source/lib/bootstrap/dist/js/bootstrap.js'
+                ],
+                dest: 'minified/libs.min.js'
             }
         },
         less: {
@@ -59,7 +66,7 @@ module.exports = function(grunt) {
     grunt.loadNpmTasks('grunt-contrib-concat');
     grunt.loadNpmTasks('grunt-contrib-less');
 
-    grunt.registerTask('test', ['jshint', 'qunit']);
+    grunt.registerTask('test', ['jshint']);
 
     grunt.registerTask('default', ['jshint', 'less', 'concat', 'watch']);
 
