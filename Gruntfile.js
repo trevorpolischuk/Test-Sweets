@@ -6,9 +6,9 @@ module.exports = function(grunt) {
             options: {
                 separator: ';'
             },
-            dist: {
-                src: ['src/**/*.js'],
-                dest: 'dist/<%= pkg.name %>.js'
+            files: {
+                src: ['source/javascripts/*.js'],
+                dest: 'minified/app.min.js'
             }
         },
         less: {
