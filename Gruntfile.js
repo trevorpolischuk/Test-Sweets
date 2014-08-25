@@ -10,13 +10,18 @@ module.exports = function(grunt) {
                 src: ['source/javascripts/*.js'],
                 dest: 'minified/app.min.js'
             },
-            libs: {
+            jslibs: {
                 src:[
                     'source/lib/jquery/dist/jquery.js',
                     'source/lib/bootstrap/dist/js/bootstrap.js',
                     'source/lib/highlightjs/highlight.pack.js'
                 ],
                 dest: 'minified/libs.min.js'
+            },
+            csslibs: {
+                src: ['source/lib/highlightjs/styles/arta.css',
+                      'source/lib/bootstrap/dist/css/bootstrap.css'],
+                dest: 'minified/libs.min.css'
             }
         },
         less: {
