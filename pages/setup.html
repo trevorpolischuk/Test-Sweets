@@ -12,7 +12,10 @@
     <!-- App CSS -->
     <link rel="stylesheet" type="text/css" media="screen" href="../minified/app.min.css">
 
-    <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/highlight.js/8.1/styles/default.min.css">
+    <!--<link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/highlight.js/8.1/styles/default.min.css">-->
+    <link rel="stylesheet" href="../source/lib/highlightjs/styles/tomorrow-night.css">
+    <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+
 
 
     <title>Test Sweets</title>
@@ -59,10 +62,13 @@
 
         <p><strong>/runners/</strong> contains a test runner. A test runner is a .html file that loads your applications files and any tests you would like to run.</p>
 
-        <p>Finally, <strong>/tests/</strong> contains the tests you will be write for your application.</p>
+        <p>Finally, <strong>/tests/</strong> contains the tests you will be writing for your application.</p>
 
         <h3>Runners</h3>
-        <p>Let's crack open the <strong>/runners/</strong> folder and open main.html in your favorite text editor. You should see something close to the following:</p>
+        <p>Let's crack open the <strong>/runners/</strong> folder and open main.html in your favorite text editor. This should look familiar to you, like a friendly old .html file.
+            However, this introduces some new topics. This is our runner. It loads your application's JS and CSS files, all of the tests of your test suite, then runs them with qUnit.
+            While deceptively simple to use (just open the file in whatever browser you would like to test), it's pretty powerful for a puny little html page.
+            </p>
 
         <pre><code>
     &lt;!DOCTYPE html&gt;
@@ -73,42 +79,55 @@
     &lt;meta name="description" content=""&gt;
     &lt;meta name="viewport" content="width=device-width"&gt;
 
-    &lt;!-- INCLUDE YOUR APPLICATION'S CSS --&gt;
+    &lt;!-- HEY WAKE UP, YOU NEED TO DO SOMETHING. Now that i've got your attention<br/>&nbsp;&nbsp;&nbsp;&nbsp;fill in the second stylesheet link with your own application's css--&gt;
     &lt;link rel="stylesheet" href="../frameworks/qunit/qunit/qunit.css"&gt;
     &lt;link rel="stylesheet" href="../../path/to/your/css.css"&gt;
     &lt;/head&gt;
 
     &lt;body&gt;
 
-    &lt;!-- The id=qunit div is used by qUnit to display the results of your test--&gt;
+    &lt;!-- The div is used by qUnit to display the results of your test.<br/>&nbsp;&nbsp;&nbsp;&nbsp;Keep your dirty hands off this.--&gt;
     &lt;div id="qunit"&gt;&lt;/div&gt;
 
-    &lt;!-- The id=qunit-fixture div should be used to populate any DOM elements you need for your test, and is then magically whisked away between tests--&gt;
+    &lt;!-- This div should be used to populate any DOM elements<br/>&nbsp;&nbsp;&nbsp; you need for your test. Then contents are then magically whisked<br/>&nbsp;&nbsp;&nbsp;&nbsp;away between tests--&gt;
     &lt;div id="qunit-fixture"&gt;&lt;/div&gt;
 
-    &lt;!-- Qunit JS Testing Framework, if desired include alternative testing frameworks here --&gt;
+    &lt;!-- Qunit JS Testing Framework, if desired include alternative<br/>&nbsp;&nbsp;&nbsp;&nbsp;testing frameworks here --&gt;
     &lt;script src="../frameworks/../frameworks/qunit/qunit/qunit.js"&gt;&lt;/script&gt;
 
-    &lt;!-- Code Coverage library, for testing how much of your applications is under test --&gt;
+    &lt;!-- Code Coverage library, for testing how much of your<br/>&nbsp;&nbsp;&nbsp;&nbsp;applications is under test --&gt;
     &lt;script src="../frameworks/blanket/dist/qunit/blanket.js"&gt;&lt;/script&gt;
 
-    &lt;!-- INCLUDE YOUR APPLICATIONS'S JAVASCRIPT --&gt;
+    &lt;!-- INCLUDE YOUR APPLICATIONS'S JAVASCRIPT, sorry for yelling --&gt;
     &lt;script src="../../path/to/your/app.js" data-cover&gt;&lt;/script&gt;
 
-    &lt;!-- Disabling Auto Start for qUnit can help setting up requirements for asynchronous testing --&gt;
+    &lt;!-- Disabling Auto Start for qUnit can help setting up<br/>&nbsp;&nbsp;&nbsp;&nbsp; requirements for asynchronous testing --&gt;
     &lt;!--&lt;script&gt;QUnit.config.autostart = false;&lt;/script&gt;--&gt;
 
+    &lt;!-- Include the tests you will be writing --&gt;
     &lt;script src="../tests/tests.js"&gt;&lt;/script&gt;
 
     &lt;/body&gt;
     &lt;/html&gt;</code>
         </pre>
 
-        Let's step through the runner and give you an explanation bettwen
-        <p>Hook up your Javascript into the test runner</p>
-        <p>Setting up GruntJS</p>
-        <p>Modifying your Gruntfile.js and package.json using the sample configurations</p>
-        <p>Install Test Sweet Dependencies using NPM</p>
+        <p>Wow ok, that was a lot of comments. But let's review individually in our heads how chill the comments were to read.</p>
+
+        <p>Once everything is hooked up you should be able to manually open the test runnner in a browser and see something like this:</p>
+
+        <img src="../images/runnin-in-the-browswer.png">
+
+        <p>That is, of course, after we've written some tests</p>
+
+        <p>Let's now hook up Grunt.JS so we can the tests from the command line to make us feel good about ourselves.</p>
+
+        <p><a href="../pages/nowhere.html" style="" class="next-button">Computer Bad Ass Mode &nbsp;&nbsp;&nbsp;<i class="fa fa-arrow-right"></i></a></p><br/><br/><br/><!--Fix this later -->
+
+
+        <!--<p>Setup tools</p>-->
+        <!--<p>Setting up GruntJS</p>-->
+        <!--<p>Modifying your Gruntfile.js and package.json using the sample configurations</p>-->
+        <!--<p>Install Test Sweet Dependencies using NPM</p>-->
 
 
     </section>

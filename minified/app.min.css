@@ -628,6 +628,10 @@ form {
   float: right;
   margin-bottom: 40px;
   font-size: 18px;
+  text-decoration:none;
+}
+.next-button:hover {
+    text-decoration:none;
 }
 /*******************************************************************************
 Full-Width Styles
