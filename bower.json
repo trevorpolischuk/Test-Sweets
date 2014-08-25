@@ -1,0 +1,30 @@
+{
+  "name": "test-sweets",
+  "version": "0.1.0",
+  "homepage": "https://github.com/trevorpolischuk/Test-Sweets",
+  "authors": [
+    "Trevor Polischuk <trevorpolischuk@gmail.com>"
+  ],
+  "description": "The documentation for Test Sweets",
+  "main": "index.html",
+  "keywords": [
+    "Automated",
+    "Javascript",
+    "Testing"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "app/bower_components",
+    "test",
+    "tests"
+  ],
+  "devDependencies": {
+    "bootstrap": "~3.2.0"
+  },
+  "dependencies": {
+    "bootstrap": "~3.2.0"
+  }
+}
