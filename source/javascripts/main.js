@@ -1,1 +1,2 @@
-console.log('This would be the main JS file.');
+//Initiate text highlighting library
+hljs.initHighlightingOnLoad();

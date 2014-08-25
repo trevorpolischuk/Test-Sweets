@@ -13,7 +13,8 @@ module.exports = function(grunt) {
             libs: {
                 src:[
                     'source/lib/jquery/dist/jquery.js',
-                    'source/lib/bootstrap/dist/js/bootstrap.js'
+                    'source/lib/bootstrap/dist/js/bootstrap.js',
+                    'source/lib/highlightjs/highlight.pack.js'
                 ],
                 dest: 'minified/libs.min.js'
             }
@@ -42,7 +43,7 @@ module.exports = function(grunt) {
             files: ['test/**/*.html']
         },
         jshint: {
-            files: ['Gruntfile.js', 'javascripts/*.js'],
+            files: ['Gruntfile.js', 'source/javascripts/*.js'],
             options: {
                 // options here to override JSHint defaults
                 globals: {
@@ -54,8 +55,8 @@ module.exports = function(grunt) {
             }
         },
         watch: {
-            files: ['<%= jshint.files %>'],
-            tasks: ['jshint', 'qunit', 'concat']
+            files: ['<%= jshint.files %>', 'source/stylesheets/*.less'],
+            tasks: ['test', 'concat']
         }
     });
 
