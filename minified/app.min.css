@@ -1,3 +1,19 @@
+@import url(http://fonts.googleapis.com/css?family=Leckerli+One|Satisfy|Pacifico);
+
+h3{
+
+    font-family: 'Leckerli One', cursive !important;
+    /*font-family: 'Satisfy', cursive !important;*/
+    /*font-family: 'Pacifico', cursive !important;*/
+}
+
+h3 {
+    font-size:54px !important;
+}
+h1,h2,h3,h4,h5,h6 {
+    color: #14B9CC !important
+}
+
 .highlight .hll {
   background-color: #ffffcc;
 }
@@ -653,20 +669,21 @@ Full-Width Styles
   z-index: 10;
   padding: 10px 50px 10px 10px;
   color: #fff;
-  background: url('../images/blacktocat.png') #357f51 no-repeat 95% 50%;
+  background: url('../images/blacktocat.png') #FF0089 no-repeat 95% 50%;
   font-weight: 700;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
   border-bottom-left-radius: 2px;
   border-bottom-right-radius: 2px;
 }
 #header_wrap {
-  background: #212121;
+  /*background: #212121;*/
   /*  background: -moz-linear-gradient(top, #373737, #212121);
   background: -webkit-linear-gradient(top, #373737, #212121);
   background: -ms-linear-gradient(top, #373737, #212121);
   background: -o-linear-gradient(top, #373737, #212121);
   background: linear-gradient(top, #373737, #212121);*/
-  background-image: url('../images/congruent_pentagon.png');
+  /*background-image: url('../images/congruent_pentagon.png');*/
+  background: #14B9CC;
   background-repeat: repeat;
 }
 #header_wrap .inner {
@@ -740,8 +757,8 @@ Full-Width Styles
   padding-top: 40px;
 }
 #footer_wrap {
-  background: #212121;
-  background-image: url('../images/congruent_pentagon.png');
+  background: #14B9CC;
+  /*background-image: url('../images/congruent_pentagon.png');*/
   background-repeat: repeat;
 }
 /*******************************************************************************
