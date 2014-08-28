@@ -19,7 +19,7 @@ module.exports = function(grunt) {
                 dest: 'minified/libs.min.js'
             },
             csslibs: {
-                src: ['source/lib/highlightjs/styles/arta.css',
+                src: ['source/lib/highlightjs/styles/monokai.css',
                       'source/lib/bootstrap/dist/css/bootstrap.css'],
                 dest: 'minified/libs.min.css'
             }

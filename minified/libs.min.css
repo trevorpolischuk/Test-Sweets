@@ -1,131 +1,118 @@
 /*
-Date: 17.V.2011
-Author: pumbur <pumbur@pumbur.net>
+Monokai style - ported by Luigi Maselli - http://grigio.org
 */
 
-.hljs
-{
+.hljs {
   display: block; padding: 0.5em;
-  background: #222;
+  background: #272822;
 }
 
-.profile .hljs-header *,
-.ini .hljs-title,
-.nginx .hljs-title
-{
-  color: #fff;
+.hljs-tag,
+.hljs-tag .hljs-title,
+.hljs-keyword,
+.hljs-literal,
+.hljs-strong,
+.hljs-change,
+.hljs-winutils,
+.hljs-flow,
+.lisp .hljs-title,
+.clojure .hljs-built_in,
+.nginx .hljs-title,
+.tex .hljs-special {
+  color: #F92672;
+}
+
+.hljs {
+  color: #DDD;
+}
+
+.hljs .hljs-constant,
+.asciidoc .hljs-code {
+	color: #66D9EF;
+}
+
+.hljs-code,
+.hljs-class .hljs-title,
+.hljs-header {
+	color: white;
+}
+
+.hljs-link_label,
+.hljs-attribute,
+.hljs-symbol,
+.hljs-symbol .hljs-string,
+.hljs-value,
+.hljs-regexp {
+	color: #BF79DB;
+}
+
+.hljs-link_url,
+.hljs-tag .hljs-value,
+.hljs-string,
+.hljs-bullet,
+.hljs-subst,
+.hljs-title,
+.hljs-emphasis,
+.haskell .hljs-type,
+.hljs-preprocessor,
+.hljs-pragma,
+.ruby .hljs-class .hljs-parent,
+.hljs-built_in,
+.sql .hljs-aggregate,
+.django .hljs-template_tag,
+.django .hljs-variable,
+.smalltalk .hljs-class,
+.hljs-javadoc,
+.django .hljs-filter .hljs-argument,
+.smalltalk .hljs-localvars,
+.smalltalk .hljs-array,
+.hljs-attr_selector,
+.hljs-pseudo,
+.hljs-addition,
+.hljs-stream,
+.hljs-envvar,
+.apache .hljs-tag,
+.apache .hljs-cbracket,
+.tex .hljs-command,
+.hljs-prompt {
+  color: #A6E22E;
 }
 
 .hljs-comment,
-.hljs-javadoc,
-.hljs-preprocessor,
-.hljs-preprocessor .hljs-title,
-.hljs-pragma,
-.hljs-shebang,
-.profile .hljs-summary,
-.diff,
+.java .hljs-annotation,
+.smartquote,
+.hljs-blockquote,
+.hljs-horizontal_rule,
+.python .hljs-decorator,
+.hljs-template_comment,
 .hljs-pi,
 .hljs-doctype,
-.hljs-tag,
-.hljs-template_comment,
-.css .hljs-rules,
-.tex .hljs-special
-{
-  color: #444;
-}
-
-.hljs-string,
-.hljs-symbol,
-.diff .hljs-change,
-.hljs-regexp,
-.xml .hljs-attribute,
-.smalltalk .hljs-char,
-.xml .hljs-value,
-.ini .hljs-value,
-.clojure .hljs-attribute,
-.coffeescript .hljs-attribute
-{
-  color: #ffcc33;
-}
-
-.hljs-number,
-.hljs-addition
-{
-  color: #00cc66;
-}
-
-.hljs-built_in,
-.hljs-literal,
-.vhdl .hljs-typename,
-.go .hljs-constant,
-.go .hljs-typename,
-.ini .hljs-keyword,
-.lua .hljs-title,
-.perl .hljs-variable,
-.php .hljs-variable,
-.mel .hljs-variable,
-.django .hljs-variable,
-.css .funtion,
-.smalltalk .method,
-.hljs-hexcolor,
-.hljs-important,
-.hljs-flow,
-.hljs-inheritance,
-.parser3 .hljs-variable
-{
-  color: #32AAEE;
+.hljs-deletion,
+.hljs-shebang,
+.apache .hljs-sqbracket,
+.tex .hljs-formula {
+  color: #75715E;
 }
 
 .hljs-keyword,
-.hljs-tag .hljs-title,
-.css .hljs-tag,
-.css .hljs-class,
+.hljs-literal,
 .css .hljs-id,
-.css .hljs-pseudo,
-.css .hljs-attr_selector,
-.lisp .hljs-title,
-.clojure .hljs-built_in,
-.hljs-winutils,
-.tex .hljs-command,
-.hljs-request,
-.hljs-status
-{
-  color: #6644aa;
-}
-
-.hljs-title,
-.ruby .hljs-constant,
-.vala .hljs-constant,
-.hljs-parent,
-.hljs-deletion,
-.hljs-template_tag,
-.css .hljs-keyword,
-.objectivec .hljs-class .hljs-id,
-.smalltalk .hljs-class,
-.lisp .hljs-keyword,
-.apache .hljs-tag,
-.nginx .hljs-variable,
-.hljs-envvar,
-.bash .hljs-variable,
-.go .hljs-built_in,
-.vbscript .hljs-built_in,
-.lua .hljs-built_in,
-.rsl .hljs-built_in,
-.tail,
-.avrasm .hljs-label,
-.tex .hljs-formula,
-.tex .hljs-formula *
-{
-  color: #bb1166;
-}
-
-.hljs-yardoctag,
 .hljs-phpdoc,
-.profile .hljs-header,
-.ini .hljs-title,
+.hljs-title,
+.hljs-header,
+.haskell .hljs-type,
+.vbscript .hljs-built_in,
+.sql .hljs-aggregate,
+.rsl .hljs-built_in,
+.smalltalk .hljs-class,
+.diff .hljs-header,
+.hljs-chunk,
+.hljs-winutils,
+.bash .hljs-variable,
 .apache .hljs-tag,
-.parser3 .hljs-title
-{
+.tex .hljs-special,
+.hljs-request,
+.hljs-status {
   font-weight: bold;
 }
 
@@ -135,28 +122,8 @@ Author: pumbur <pumbur@pumbur.net>
 .xml .javascript,
 .xml .vbscript,
 .xml .css,
-.xml .hljs-cdata
-{
-  opacity: 0.6;
-}
-
-.hljs,
-.javascript,
-.css,
-.xml,
-.hljs-subst,
-.diff .hljs-chunk,
-.css .hljs-value,
-.css .hljs-attribute,
-.lisp .hljs-string,
-.lisp .hljs-number,
-.tail .hljs-params,
-.hljs-container,
-.haskell *,
-.erlang *,
-.erlang_repl *
-{
-  color: #aaa;
+.xml .hljs-cdata {
+  opacity: 0.5;
 }
 ;/*!
  * Bootstrap v3.2.0 (http://getbootstrap.com)
