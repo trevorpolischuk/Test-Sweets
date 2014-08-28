@@ -1,19 +1,3 @@
-@import url(http://fonts.googleapis.com/css?family=Leckerli+One|Satisfy|Pacifico);
-
-h3{
-
-    font-family: 'Leckerli One', cursive !important;
-    /*font-family: 'Satisfy', cursive !important;*/
-    /*font-family: 'Pacifico', cursive !important;*/
-}
-
-h3 {
-    font-size:54px !important;
-}
-h1,h2,h3,h4,h5,h6 {
-    color: #14B9CC !important
-}
-
 .highlight .hll {
   background-color: #ffffcc;
 }
@@ -308,7 +292,6 @@ h1,h2,h3,h4,h5,h6 {
   color: #a31515;
 }
 
-@import url(pygment_trac.css);
 /*******************************************************************************
 Slate Theme for GitHub Pages
 by Jason Costello, @jsncostello
@@ -446,7 +429,6 @@ h6 {
   margin: 10px 0;
   font-weight: 700;
   color: #222222;
-  font-family: 'Lucida Grande', 'Calibri', Helvetica, Arial, sans-serif;
   letter-spacing: -1px;
   color: #357F51;
 }
@@ -644,10 +626,10 @@ form {
   float: right;
   margin-bottom: 40px;
   font-size: 18px;
-  text-decoration:none;
+  text-decoration: none;
 }
 .next-button:hover {
-    text-decoration:none;
+  text-decoration: none;
 }
 /*******************************************************************************
 Full-Width Styles
@@ -669,7 +651,7 @@ Full-Width Styles
   z-index: 10;
   padding: 10px 50px 10px 10px;
   color: #fff;
-  background: url('../images/blacktocat.png') #FF0089 no-repeat 95% 50%;
+  background: url('../images/blacktocat.png') #ff0089 no-repeat 95% 50%;
   font-weight: 700;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
   border-bottom-left-radius: 2px;
@@ -802,4 +784,16 @@ Small Device Styles
     max-width: 480px;
     font-size: 11px;
   }
+}
+h3 {
+  font-family: 'Pacifico', cursive !important;
+  font-size: 54px !important;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: #14b9cc !important;
 }

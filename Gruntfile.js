@@ -30,7 +30,7 @@ module.exports = function(grunt) {
                     paths: ["assets/css"]
                 },
                 files: {
-                    "minified/app.min.css": "stylesheets/*.less"
+                    "minified/app.min.css": "source/stylesheets/*.less"
                 }
             }
         },
@@ -60,8 +60,8 @@ module.exports = function(grunt) {
             }
         },
         watch: {
-            files: ['<%= jshint.files %>', 'source/stylesheets/*.less'],
-            tasks: ['test', 'concat']
+            files: ['<%= jshint.files %>', 'source/stylesheets/stylesheet.less'],
+            tasks: ['test', 'concat', 'less']
         }
     });
 
